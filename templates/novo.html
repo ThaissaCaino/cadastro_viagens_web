@@ -1,0 +1,27 @@
+{% extends "template.html" %}
+{% block conteudo %}
+    </div>
+    <form method="post">
+        <label class="form-label" for="codigo">Código</label>
+            <input class="form-control" id="codigo" type="text" name="codigo" placeholder="codigo"></br>
+        <label class="form-label" for="municipio">Município</label>
+            <input class="form-control" id="municipio" type="text" name="municipio" placeholder="municipio"></br>
+        <label class="form-label" for="estado">Estado</label>
+            <input class="form-control"  id="estado" type="text" name="estado" placeholder="estado"></br>
+        <label class="form-label" for="atividade">Atividades</label>
+            <input class="form-control" id="atividade" type="text" name="atividade" placeholder="atividade"></br>
+
+
+        <center>
+
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Gravar</button>
+    </form>
+    <p></p>
+    <form action="/index">
+        <button class="btn btn-primary btn-lg btn-block" >Voltar</button>
+        </center>
+    </form>
+
+    </body>
+    </html>
+{% endblock %}

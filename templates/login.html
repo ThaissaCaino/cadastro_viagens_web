@@ -1,0 +1,19 @@
+{% extends "template.html" %}
+{% block conteudo %}
+<!-- Código completo na aula 03 do módulo 5-->
+    <div>
+        <form method="POST" action="/autenticar">
+                <input type="hidden" name="proxima" value="{{ proxima }}">
+            <label class="form-label" for="usuario">Nome de usuário:</label>
+                <input class="form-control" id="usuario" type="text" name="usuario" required placeholder="usuario"></p>
+            <label class="form-label" for="senha">Digite sua senha:</label>
+                <input class="form-control" id="senha" type="password" name="senha" required placeholder="senha"></p>
+            <p> Login == seu nome</p>
+            <p> Senha == resiliencia</p>
+
+            <p><button class="btn btn-primary btn-lg btn-block" type="submit">Entrar</button></p>
+        </form>
+    </div>
+</body>
+</html>
+     {% endblock %}
